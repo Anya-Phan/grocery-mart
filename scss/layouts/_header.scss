@@ -1,0 +1,105 @@
+@use "../abs";
+.header {
+    padding: 30px 0;
+    background-color: var(--header-bg-color);
+    @include abs.breakpoint(md) {
+        padding: 16px 0;
+    }
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+
+    &__more {
+        display: none;
+        width: 24px;
+        height: 24px;
+        padding: 4px 6px;
+
+        @include abs.breakpoint(xl) {
+            display: block;
+        }
+    }
+}
+
+.navbar {
+    margin-left: 144px;
+    @include abs.breakpoint(xl) {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+}
+
+.top-act {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+
+    @include abs.breakpoint(md) {
+        margin-left: 0;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        background: var(--top-act-bg-color);
+        box-shadow: 0px 20px 60px 10px var(--top-act-shadow-color);
+
+        @include abs.breakpoint(md) {
+            display: none;
+        }
+    }
+
+    &__separate {
+        width: 1px;
+        height: 30px;
+        background: #ededf6;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 13px;
+    }
+
+    &__icon {
+        width: 24px;
+        height: auto;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+    }
+
+    &__user {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.08);
+    }
+
+    &__ava {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

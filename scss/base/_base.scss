@@ -11,9 +11,36 @@ html {
 
 body {
     font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+textarea,
+button,
+select,
+option {
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
 }
 
 .page-row {
     display: flex;
     align-items: center;
+}
+
+.icon {
+    filter: var(--icon-color);
 }
