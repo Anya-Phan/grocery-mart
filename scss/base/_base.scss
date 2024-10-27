@@ -1,0 +1,19 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Gordita", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.page-row {
+    display: flex;
+    align-items: center;
+}
