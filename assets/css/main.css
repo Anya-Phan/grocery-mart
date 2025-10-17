@@ -2620,6 +2620,95 @@ html.dark {
   object-fit: contain;
 }
 
+.text-content h3,
+.text-content p,
+.text-content blockquote,
+.text-content img,
+.text-content em {
+  font-size: inherit;
+  margin: 20px 0;
+}
+@media (max-width: 991.98px) {
+  .text-content h3,
+  .text-content p,
+  .text-content blockquote,
+  .text-content img,
+  .text-content em {
+    margin: 10px 0;
+  }
+}
+.text-content h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+@media (max-width: 991.98px) {
+  .text-content h2 {
+    font-size: 18px;
+  }
+}
+.text-content h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (max-width: 991.98px) {
+  .text-content h3 {
+    font-size: 16px;
+  }
+}
+.text-content p {
+  font-size: 16px;
+}
+@media (max-width: 991.98px) {
+  .text-content p {
+    font-size: 14px;
+  }
+}
+.text-content a {
+  color: #0071dc;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.text-content em {
+  font-style: italic;
+}
+.text-content blockquote {
+  border-left: 4px solid #ffc800;
+  padding: 1px 20px;
+  font-style: italic;
+  background-color: rgba(255, 225, 0, 0.1098039216);
+}
+@media (max-width: 991.98px) {
+  .text-content blockquote {
+    border-width: 2px;
+    padding: 1px 10px;
+  }
+}
+.text-content hr {
+  margin: 30px 0;
+}
+@media (max-width: 991.98px) {
+  .text-content hr {
+    margin: 20px 0;
+  }
+}
+.text-content img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+  height: auto;
+}
+@media (max-width: 991.98px) {
+  .text-content img {
+    width: 200px;
+  }
+}
+.text-content img + em {
+  text-align: center;
+  display: block;
+}
+
 .card-01 {
   display: flex;
   align-items: center;
@@ -3360,7 +3449,7 @@ html.dark {
 .desc .swiper-slide-thumb-active {
   color: var(--text-color);
 }
-.desc .review {
+.desc .desc__swiper {
   margin-top: 30px;
 }
 .desc__tabs {
@@ -3788,6 +3877,7 @@ html.dark {
 }
 .add-card__btns .circle-btn {
   padding: 10px 20px;
+  font-size: 16px;
 }
 @media (max-width: 991.98px) {
   .add-card__btns .circle-btn {

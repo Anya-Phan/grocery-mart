@@ -37,6 +37,7 @@
         }
         .circle-btn {
             padding: 10px 20px;
+            font-size: 16px;
             @include abs.breakpoint(lg) {
                 font-size: 14px;
             }
@@ -44,7 +45,7 @@
         .cancel-btn {
             font-size: 16px;
             font-weight: 500;
-             @include abs.breakpoint(lg) {
+            @include abs.breakpoint(lg) {
                 font-size: 14px;
             }
         }

@@ -206,5 +206,5 @@ const prdSwiper = new Swiper(".desc__swiper", {
     thumbs: {
         swiper: tabsThumb,
     },
+    autoHeight: true,
 });
-prdSwiper.slideTo(2, 0 , false);
