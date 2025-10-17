@@ -62,9 +62,9 @@
         margin-left: auto;
         width: 500px;
         height: auto;
-         @include abs.breakpoint(lg){
+        @include abs.breakpoint(lg) {
             width: 200px;
-         }
+        }
     }
     img + em {
         text-align: center;
