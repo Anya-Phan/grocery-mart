@@ -1,0 +1,78 @@
+@use "../abs";
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s linear;
+
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #8d8d8d58;
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-color: var(--bg-color);
+        padding: 60px;
+        border-radius: 30px;
+        max-width: 100%;
+        @include abs.breakpoint(lg) {
+            padding: 20px;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        filter: var(--icon-color);
+        @include abs.breakpoint(lg) {
+            width: 30px;
+            height: 30px;
+            
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__message {
+        font-weight: 500;
+        font-size: 30px;
+        margin: 10px 0 30px;
+        width: 400px;
+        text-align: center;
+        @include abs.breakpoint(lg){
+            font-size: 18px;
+            width: 300px;
+            max-width: 100%;
+            margin: 30px 0;
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__btn {
+        font-size: 20px;
+    }
+}
+
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+}

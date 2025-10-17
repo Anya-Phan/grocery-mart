@@ -1,0 +1,30 @@
+@use "../abs";
+.breadcrumbs {
+    border-radius: 10px;
+    background: var(--breadcrumb-bg);
+    box-shadow: 0 20px 60px 10px var(--shadow-color);
+    padding: 20px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 8px;
+        color: #9e9da8;
+    }
+    &__next {
+        width: 16px;
+        height: 16px;
+        filter: brightness(0) saturate(100%) invert(71%) sepia(13%)
+            saturate(165%) hue-rotate(206deg) brightness(85%) contrast(96%);
+        transform: rotate(-90deg);
+        margin-right: 20px;
+    }
+    &__active {
+        color: var(--text-color);
+    }
+}

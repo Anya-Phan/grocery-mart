@@ -1,0 +1,17 @@
+@use "../abs";
+.slideshow,
+.browse,
+.lavazza {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @include abs.breakpoint(lg) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.lavazza__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

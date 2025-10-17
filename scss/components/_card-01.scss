@@ -1,0 +1,44 @@
+@use "../abs";
+.card-01 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 16px;
+    background-color: var(--card-bg-color-1);
+    &__img {
+        background-color: var(--img-bg-color-1);
+        width: 116px;
+        height: 116px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        @include abs.breakpoint(md) {
+            width: 88px;
+            height: 88px;
+        }
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__info {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    &__price-range {
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 5px;
+        @include abs.breakpoint(md) {
+            font-size: 18px;
+        }
+    }
+    &__desc {
+        font-size: 16px;
+        font-weight: 400;
+        @include abs.breakpoint(md) {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+$breakpoints: (
+    xxl: 1440px,
+    xl: 1200px,
+    lg: 992px,
+    md: 768px,
+    sm: 576px,
+);
+
+$display-values: block, flex, grid, none;
+@each $display in $display-values {
+    .d-#{$display} {
+        display: $display;
+    }
+}
+@each $breakpoint, $dimension in $breakpoints {
+    @media (max-width: ($dimension - 0.02)) {
+        @each $display in $display-values {
+            .d-#{$breakpoint}-#{$display} {
+                display: $display;
+            }
+        }
+    }
+}

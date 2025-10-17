@@ -10,28 +10,69 @@
 .top-bar {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
 
     &__more {
-        display: none;
         width: 24px;
         height: 24px;
         padding: 4px 6px;
-
-        @include abs.breakpoint(xl) {
-            display: block;
-        }
     }
 }
 
 .navbar {
     margin-left: 144px;
     @include abs.breakpoint(xl) {
-        display: none;
+        position: fixed;
+        inset: 0 50% 0 0;
+        translate: -100%;
+        z-index: 2;
+        bottom: 0;
+        margin: 0;
+        background-color: var(--dropdown-color);
+        border-radius: 0 20px 20px 0;
+        padding: 20px;
+        transition: 0.3s linear;
+    }
+
+    @include abs.breakpoint(sm) {
+        right: 50px;
+    }
+
+    &-overlay {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        transition: 0.3s linear;
+
+        @include abs.breakpoint(xl) {
+            // visibility: visible;
+            // opacity: 1;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
     }
 
     &__list {
         display: flex;
         gap: 30px;
+        @include abs.breakpoint(xl) {
+            flex-direction: column;
+            gap: 20px;
+            height: calc(100% - 27px);
+            padding: 0 0 10px 0;
+            overflow: auto;
+        }
+    }
+
+    &__item {
+        &:hover .dropdown {
+            display: block;
+            @include abs.breakpoint(xl) {
+                display: none;
+            }
+        }
     }
 
     &__link {
@@ -41,6 +82,29 @@
         display: flex;
         gap: 6px;
         align-items: center;
+        @include abs.breakpoint(xl) {
+            justify-content: space-between;
+        }
+    }
+
+    &__close-btn {
+        display: none;
+        filter: var(--icon-color);
+        @include abs.breakpoint(xl) {
+            display: block;
+            padding: 4px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &.active {
+        translate: 0;
+        box-shadow: 0 40px 90px 20px var(--shadow-color);
+    }
+
+    &.active ~ &-overlay {
+        visibility: visible;
+        opacity: 1;
     }
 }
 
@@ -55,15 +119,10 @@
     }
 
     &__group {
-        display: flex;
         align-items: center;
         border-radius: 8px;
         background: var(--top-act-bg-color);
         box-shadow: 0px 20px 60px 10px var(--top-act-shadow-color);
-
-        @include abs.breakpoint(md) {
-            display: none;
-        }
     }
 
     &__separate {
@@ -102,4 +161,24 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+.top-act-mobi {
+    &__group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    &__icon {
+        filter: var(--icon-color);
+    }
+    &__name {
+        margin-left: 16px;
+        margin-right: auto;
+    }
+}
+
+.top-act__btn:hover .cart-dropdown {
+    display: block;
 }

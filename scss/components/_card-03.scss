@@ -1,0 +1,60 @@
+@use "../abs";
+.card-03 {
+    border-radius: 16px;
+    background: var(--intro-bg);
+    padding: 30px;
+    &__user {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__user-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @include abs.breakpoint(xl) {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &__user-name {
+        font-size: 22px;
+        font-weight: 500;
+        @include abs.breakpoint(lg) {
+            font-size: 18px;
+        }
+    }
+    &__user-mess {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    &__rate {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &__list-star {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        img {
+            width: 24px;
+            height: 24px;
+            padding: 3px;
+            vertical-align: middle;
+        }
+    }
+    &__point {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,236 @@
+@use "../abs";
+.checkout-main {
+    display: flex;
+    gap: 30px;
+    @include abs.breakpoint(lg) {
+        flex-direction: column;
+    }
+}
+
+.checkout-left {
+    background-color: var(--card-bg-color-2);
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-grow: 1;
+    border-radius: 20px;
+    @include abs.breakpoint(lg) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &__foot {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        @include abs.breakpoint(sm) {
+            flex-direction: column-reverse;
+            gap: 16px;
+        }
+    }
+    &__mini-title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.checkout-right {
+    width: 391px;
+    max-width: 100%;
+    flex-shrink: 0;
+    @include abs.breakpoint(lg) {
+        width: auto;
+    }
+    .form {
+        margin-top: 30px;
+    }
+}
+
+.shipping {
+    margin: 30px 0;
+    &__title {
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--title-undeline);
+    }
+}
+
+.shipping-address {
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include abs.breakpoint(xl) {
+            flex-direction: column;
+            gap: 16px;
+            align-items: start;
+        }
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__subtile {
+        font-size: 15px;
+    }
+    &__btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    &__add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 8px;
+        border: 2px solid currentColor;
+        flex-shrink: 0;
+    }
+    .form__check {
+        position: relative;
+    }
+    &__edit {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        @include abs.breakpoint(sm) {
+            position: static;
+            margin-top: 16px;
+        }
+        img {
+            width: 24px;
+            height: 24px;
+            filter: var(--icon-color);
+        }
+    }
+}
+
+.address {
+    margin-top: 30px;
+    &__name {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+    &__street {
+        font-size: 15px;
+    }
+    &__items {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+        @include abs.breakpoint(sm) {
+            margin-top: 16px;
+        }
+    }
+    &__item {
+        list-style: disc inside;
+        font-size: 14px;
+    }
+    .form__fakebox {
+        width: 24px;
+        height: 24px;
+    }
+}
+.form__check .address {
+    align-items: start;
+}
+
+.shipping-set {
+    &__row {
+        border-radius: 20px;
+        padding: 20px;
+        background-color: var(--bg-color);
+        margin-top: 30px;
+    }
+    &__row label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__subtitle {
+        font-size: 15px;
+    }
+    &__box {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+    }
+}
+
+.shipping-method {
+    &__row {
+        border-radius: 20px;
+        padding: 20px;
+        background-color: var(--bg-color);
+        margin-top: 30px;
+    }
+
+    &__row label {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include abs.breakpoint(lg) {
+            align-items: start;
+        }
+    }
+    &__img {
+        width: 70px;
+        height: 54px;
+        border-radius: 10px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include abs.breakpoint(lg) {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__desc {
+        font-size: 16px;
+        color: #9e9da8;
+    }
+    &__check {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 14px;
+        font-size: 18px;
+        color: #9e9da8;
+        font-weight: 500;
+        @include abs.breakpoint(lg) {
+            margin-top: 16px;
+        }
+    }
+    input[type="radio"]:checked ~ p {
+        color: var(--text-color);
+    }
+}
+
+.favourite {
+    margin-top: 30px;
+    .form__fakebox {
+        align-self: start;
+        flex-shrink: 0;
+    }
+
+    &__list {
+        margin-top: 16px;
+    }
+}

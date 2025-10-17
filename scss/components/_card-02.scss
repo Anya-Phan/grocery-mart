@@ -1,0 +1,67 @@
+@use "../abs";
+.card-02 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: var(--card-bg-color-2);
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 284px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__heart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        right: 16px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0 20px 60px 6px rgba(124, 124, 124, 0.2);
+        background-color: var(--top-act-bg-color);
+        svg {
+            width: 25px;
+            height: auto;
+        }
+        &.active {
+            svg {
+                fill: #f94545;
+            }
+            path:first-child {
+                stroke: #f94545;
+            }
+            path:last-child {
+                stroke: #fff;
+            }
+        }
+    }
+    &__name {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__brand {
+        font-size: 15px;
+        color: #9e9da8;
+    }
+    &__foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__rate {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}

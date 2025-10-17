@@ -1,9 +1,51 @@
+@use "../abs";
 :root {
     --text-color: #1a162e;
     --icon-color: brightness(0) saturate(100%) invert(8%) sepia(51%)
         saturate(751%) hue-rotate(210deg) brightness(93%) contrast(96%);
+    --field-icon-color: brightness(0) saturate(100%) invert(77%) sepia(9%)
+        saturate(268%) hue-rotate(206deg) brightness(82%) contrast(84%);
 
+    //body
+    --bg-color: #f6f6f6;
+
+    //header
     --header-bg-color: #eee;
     --top-act-bg-color: #fff;
     --top-act-shadow-color: rgba(237, 237, 246, 0.2);
+
+    @include abs.breakpoint(md) {
+        --header-bg-color: #fff;
+    }
+
+    // dropdown
+    --dropdown-color: #fff;
+    --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
+    --top-menu-border-color: #d2d1d6;
+    --top-menu-text-color: var(--text-color);
+
+    // shadow
+    --shadow-color: rgba(200, 200, 200, 0.2);
+
+    // card img bg
+    --card-bg-color-1: #eee;
+    --card-bg-color-2: #fff;
+    --img-bg-color-1: #fff;
+
+    // form element
+    --form-elem-color: #d2d1d6;
+    --tag-bg: #f8f8fb;
+
+    // bg-intro
+    --intro-bg: #fafafd;
+
+    // breadcrumbs
+    --breadcrumb-bg: #f6f6f6;
+
+    //card-odd-and-even
+    --card-odd-bg: rgba(0, 0, 0, 0.05);
+    --card-even-bg: transparent;
+
+    //title underline
+    --title-undeline: #d2d1d6;
 }

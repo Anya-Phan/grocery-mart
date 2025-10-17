@@ -1,0 +1,15 @@
+@use "../abs";
+.page-back {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+
+    img {
+        padding: 5px;
+        object-fit: contain;
+        transform: rotate(90deg);
+        filter: var(--icon-color);
+    }
+}

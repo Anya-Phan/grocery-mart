@@ -1,34 +1,1006 @@
 <div class="container">
     <div class="top-bar">
-        <button class="top-bar__more">
+        <button class="top-bar__more d-none d-xl-block js-toggle-active" data-active-target="navbar">
             <img src="./assets/icons/icon__menu.svg" alt="" class="icon top-bar__more-icon">
         </button>
 
-        <a href="./" class="logo">
+        <a href="./home.html" class="logo">
             <img src="./assets/icons/logo.svg" alt="" class="logo__img" />
             <h1 class="logo__title">grocerymart</h1>
         </a>
 
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li>
-                    <a href="#!" class="navbar__link">
+        <nav class="navbar" id="navbar">
+            <button class="navbar__close-btn js-toggle-active" data-active-target="navbar">
+                <img src="./assets/icons/arrow__left.svg" alt="">
+            </button>
+            <div class="top-act-mobi d-none d-md-block">
+                <a class="top-act-mobi__group" href="#!">
+                    <img src="./assets/icons/icon__cart.svg" alt="" class="top-act-mobi__icon">
+                    <p class="top-act-mobi__name">Card</p>
+                    <p class="top-act-mobi__number">3</p>
+                </a>
+                <a class="top-act-mobi__group" href="#!">
+                    <img src="./assets/icons/icon__heart.svg" alt="" class="top-act-mobi__icon">
+                    <p class="top-act-mobi__name">Favorite</p>
+                    <p class="top-act-mobi__number">3</p>
+                </a>
+            </div>
+            <ul class="navbar__list js-dropdown-list">
+                <li class="navbar__item">
+                    <a href="#!" class="navbar__link js-toggle-active" data-active-target="dropdown-1">
                         Departments
                         <img src="./assets/icons/drop-down.svg" alt="" class="icon navbar__drop-down">
                     </a>
+                    <section class="dropdown" id="dropdown-1">
+                        <div class="dropdown__inner">
+                            <div class="top-menu">
+                                <div class="top-menu__main">
+                                    <!-- Menu Column -->
+                                    <div class="menu-column">
+                                        <div class="menu-column__icon d-xl-none">
+                                            <img src="./assets/icons/cate-icon-1.1.svg" alt=""
+                                                class="menu-column__icon-1">
+                                            <img src="./assets/icons/cate-icon-1.2.svg" alt=""
+                                                class="menu-column__icon-2">
+                                        </div>
+                                        <div class="menu-column__content">
+                                            <h2 class="menu-column__heading d-xl-none">All Departments</h2>
+                                            <ul class="menu-column__list">
+                                                <li>
+                                                    <a href="#!" class="menu-column__link js-toggle-active"
+                                                        data-active-target="sub-menu-1">Savings & Featured Shops</a>
+                                                    <div class="sub-menu" id="sub-menu-1">
+                                                        <!-- Sub-menu Colums -->
+                                                        <div class="sub-menu__column">
+                                                            <div class="menu-column">
+                                                                <div class="menu-column__icon">
+                                                                    <img src="./assets/icons/cate-icon-3.1.svg" alt=""
+                                                                        class="menu-column__icon-1">
+                                                                    <img src="./assets/icons/cate-icon-3.2.svg" alt=""
+                                                                        class="menu-column__icon-2">
+                                                                </div>
+                                                                <div class="menu-column__content">
+                                                                    <h2 class="menu-column__heading">TV & Video
+                                                                    </h2>
+                                                                    <ul class="menu-column__list">
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Shop
+                                                                                all TVs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">TVs
+                                                                                by Size</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Smart
+                                                                                TVs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Roku
+                                                                                TVs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Streaming</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">TV
+                                                                                Mounts & Accessories</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">DVD &
+                                                                                Blu-Ray Players</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-column">
+                                                                <div class="menu-column__icon">
+                                                                    <img src="./assets/icons/cate-icon-2.1.svg" alt=""
+                                                                        class="menu-column__icon-1">
+                                                                    <img src="./assets/icons/cate-icon-2.2.svg" alt=""
+                                                                        class="menu-column__icon-2">
+                                                                </div>
+                                                                <div class="menu-column__content">
+                                                                    <h2 class="menu-column__heading">Wearable Technology
+                                                                    </h2>
+                                                                    <ul class="menu-column__list">
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Galaxy
+                                                                                Watch</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Apple
+                                                                                Watch</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Fitness
+                                                                                Trackers</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Virtual
+                                                                                Reality</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Headphones</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-menu__column">
+                                                            <div class="menu-column">
+                                                                <div class="menu-column__icon">
+                                                                    <img src="./assets/icons/cate-icon-4.1.svg" alt=""
+                                                                        class="menu-column__icon-1">
+                                                                    <img src="./assets/icons/cate-icon-4.2.svg" alt=""
+                                                                        class="menu-column__icon-2">
+                                                                </div>
+                                                                <div class="menu-column__content">
+                                                                    <h2 class="menu-column__heading">Computers
+                                                                    </h2>
+                                                                    <ul class="menu-column__list">
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Shop
+                                                                                All Computers</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Laptops</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">PC
+                                                                                Gaming</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Monitors</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Chromebook</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Printers &
+                                                                                Ink</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Shop
+                                                                                all TVs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Computer
+                                                                                Accessories</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Desktops</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Tax
+                                                                                Software</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Computer
+                                                                                Software</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">PC
+                                                                                Finder</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-menu__column">
+                                                            <div class="menu-column">
+                                                                <div class="menu-column__icon">
+                                                                    <img src="./assets/icons/cate-icon-5.1.svg" alt=""
+                                                                        class="menu-column__icon-1">
+                                                                    <img src="./assets/icons/cate-icon-5.2.svg" alt=""
+                                                                        class="menu-column__icon-2">
+                                                                </div>
+                                                                <div class="menu-column__content">
+                                                                    <h2 class="menu-column__heading">Savings
+                                                                    </h2>
+                                                                    <ul class="menu-column__list">
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Tech
+                                                                                Savings</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Overstock
+                                                                                Savings</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Tech
+                                                                                Rollbacks</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link js-toggle-active"
+                                                        data-active-target="sub-menu-2">Electronics</a>
+                                                    <div class="sub-menu" id="sub-menu-2">
+                                                        <!-- Sub-menu Colums -->
+                                                        <div class="sub-menu__column">
+                                                            <div class="menu-column">
+                                                                <div class="menu-column__icon">
+                                                                    <img src="./assets/icons/cate-icon-2.1.svg" alt=""
+                                                                        class="menu-column__icon-1">
+                                                                    <img src="./assets/icons/cate-icon-2.2.svg" alt=""
+                                                                        class="menu-column__icon-2">
+                                                                </div>
+                                                                <div class="menu-column__content">
+                                                                    <h2 class="menu-column__heading">TV & Video
+                                                                    </h2>
+                                                                    <ul class="menu-column__list">
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Shop
+                                                                                all TVs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">TVs
+                                                                                by Size</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Smart
+                                                                                TVs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Roku
+                                                                                TVs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Streaming</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">TV
+                                                                                Mounts & Accessories</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">DVD &
+                                                                                Blu-Ray Players</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-column">
+                                                                <div class="menu-column__icon">
+                                                                    <img src="./assets/icons/cate-icon-3.1.svg" alt=""
+                                                                        class="menu-column__icon-1">
+                                                                    <img src="./assets/icons/cate-icon-3.2.svg" alt=""
+                                                                        class="menu-column__icon-2">
+                                                                </div>
+                                                                <div class="menu-column__content">
+                                                                    <h2 class="menu-column__heading">Wearable Technology
+                                                                    </h2>
+                                                                    <ul class="menu-column__list">
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Galaxy
+                                                                                Watch</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Apple
+                                                                                Watch</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Fitness
+                                                                                Trackers</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Virtual
+                                                                                Reality</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Headphones</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-menu__column">
+                                                            <div class="menu-column">
+                                                                <div class="menu-column__icon">
+                                                                    <img src="./assets/icons/cate-icon-4.1.svg" alt=""
+                                                                        class="menu-column__icon-1">
+                                                                    <img src="./assets/icons/cate-icon-4.2.svg" alt=""
+                                                                        class="menu-column__icon-2">
+                                                                </div>
+                                                                <div class="menu-column__content">
+                                                                    <h2 class="menu-column__heading">Computers
+                                                                    </h2>
+                                                                    <ul class="menu-column__list">
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Shop
+                                                                                All Computers</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Laptops</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">PC
+                                                                                Gaming</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Monitors</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Chromebook</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Printers &
+                                                                                Ink</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Shop
+                                                                                all TVs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Computer
+                                                                                Accessories</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Desktops</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Tax
+                                                                                Software</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Computer
+                                                                                Software</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">PC
+                                                                                Finder</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-menu__column">
+                                                            <div class="menu-column">
+                                                                <div class="menu-column__icon">
+                                                                    <img src="./assets/icons/cate-icon-5.1.svg" alt=""
+                                                                        class="menu-column__icon-1">
+                                                                    <img src="./assets/icons/cate-icon-5.2.svg" alt=""
+                                                                        class="menu-column__icon-2">
+                                                                </div>
+                                                                <div class="menu-column__content">
+                                                                    <h2 class="menu-column__heading">Savings
+                                                                    </h2>
+                                                                    <ul class="menu-column__list">
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Tech
+                                                                                Savings</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Overstock
+                                                                                Savings</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Tech
+                                                                                Rollbacks</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-column">
+                                                                <div class="menu-column__icon">
+                                                                    <img src="./assets/icons/cate-icon-6.1.svg" alt=""
+                                                                        class="menu-column__icon-1">
+                                                                    <img src="./assets/icons/cate-icon-6.2.svg" alt=""
+                                                                        class="menu-column__icon-2">
+                                                                </div>
+                                                                <div class="menu-column__content">
+                                                                    <h2 class="menu-column__heading">Cell Phones
+                                                                    </h2>
+                                                                    <ul class="menu-column__list">
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Wireless
+                                                                                Deals</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">5G
+                                                                                Phones
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Prepaid Phones
+                                                                                & Plans
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Refurbished
+                                                                                Phones</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">iPhone
+                                                                                Accessories</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!" class="menu-column__link">Cases
+                                                                                & Screen Protectors
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Walmart
+                                                                                Protection Plan</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#!"
+                                                                                class="menu-column__link">Unlocked
+                                                                                Phones</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Clothing, Shoes &
+                                                        Accessories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Home, Furniture &
+                                                        Appliances</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Toys & Video Games</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Home Improvement</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Baby</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Household Essentials</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Personal Care</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Patio & Garden</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Sports & Outdoors</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Gift Cards</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Auto, Tires and
+                                                        Industrial</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!" class="menu-column__link">Movies, Music & Books</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </li>
-                <li>
-                    <a href="#!" class="navbar__link">Grocery
+                <li class="navbar__item">
+                    <a href="#!" class="navbar__link js-toggle-active" data-active-target="dropdown-2">Grocery
                         <img src="./assets/icons/drop-down.svg" alt="" class="icon navbar__drop-down">
                     </a>
+                    <section class="dropdown" id="dropdown-2">
+                        <div class="dropdown__inner">
+                            <div class="top-menu">
+                                <!-- Menu Column -->
+                                <div class="sub-menu sub-menu--not-main">
+                                    <!-- Sub-menu Colums -->
+                                    <div class="sub-menu__column">
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-3.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-3.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">TV & Video
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop all
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">TVs by
+                                                            Size</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Smart
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Roku
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Streaming</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">TV Mounts
+                                                            & Accessories</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">DVD &
+                                                            Blu-Ray Players</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-2.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-2.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">Wearable Technology
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Galaxy
+                                                            Watch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Apple
+                                                            Watch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Fitness
+                                                            Trackers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Virtual
+                                                            Reality</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Headphones</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu__column">
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-4.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-4.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">Computers
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop All
+                                                            Computers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Laptops</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">PC
+                                                            Gaming</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Monitors</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Chromebook</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Printers
+                                                            & Ink</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop all
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Computer
+                                                            Accessories</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Desktops</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Tax
+                                                            Software</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Computer
+                                                            Software</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">PC
+                                                            Finder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu__column">
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-5.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-5.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">Savings
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Tech
+                                                            Savings</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Overstock
+                                                            Savings</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Tech
+                                                            Rollbacks</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="sub-menu__column">
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-4.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-4.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">Computers
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop All
+                                                            Computers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Laptops</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">PC
+                                                            Gaming</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Monitors</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Chromebook</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Printers
+                                                            & Ink</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop all
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Computer
+                                                            Accessories</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Desktops</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Tax
+                                                            Software</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Computer
+                                                            Software</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">PC
+                                                            Finder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </li>
-                <li>
-                    <a href="#!" class="navbar__link">Beauty
+                <li class="navbar__item">
+                    <a href="#!" class="navbar__link js-toggle-active" data-active-target="dropdown-3">Beauty
                         <img src="./assets/icons/drop-down.svg" alt="" class="icon navbar__drop-down">
                     </a>
+                    <section class="dropdown" id="dropdown-3">
+                        <div class="dropdown__inner">
+                            <div class="top-menu">
+                                <!-- Menu Column -->
+                                <div class="sub-menu sub-menu--not-main">
+                                    <!-- Sub-menu Colums -->
+                                    <div class="sub-menu__column">
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-5.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-5.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">Savings
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Tech
+                                                            Savings</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Overstock
+                                                            Savings</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Tech
+                                                            Rollbacks</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="sub-menu__column">
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-4.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-4.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">Computers
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop All
+                                                            Computers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Laptops</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">PC
+                                                            Gaming</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Monitors</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Chromebook</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Printers
+                                                            & Ink</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop all
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Computer
+                                                            Accessories</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Desktops</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Tax
+                                                            Software</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Computer
+                                                            Software</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">PC
+                                                            Finder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu__column">
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-3.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-3.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">TV & Video
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop all
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">TVs by
+                                                            Size</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Smart
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Roku
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Streaming</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">TV Mounts
+                                                            & Accessories</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">DVD &
+                                                            Blu-Ray Players</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-2.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-2.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">Wearable Technology
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Galaxy
+                                                            Watch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Apple
+                                                            Watch</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Fitness
+                                                            Trackers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Virtual
+                                                            Reality</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Headphones</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu__column">
+                                        <div class="menu-column">
+                                            <div class="menu-column__icon">
+                                                <img src="./assets/icons/cate-icon-4.1.svg" alt=""
+                                                    class="menu-column__icon-1">
+                                                <img src="./assets/icons/cate-icon-4.2.svg" alt=""
+                                                    class="menu-column__icon-2">
+                                            </div>
+                                            <div class="menu-column__content">
+                                                <h2 class="menu-column__heading">Computers
+                                                </h2>
+                                                <ul class="menu-column__list">
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop All
+                                                            Computers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Laptops</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">PC
+                                                            Gaming</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Monitors</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Chromebook</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Printers
+                                                            & Ink</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Shop all
+                                                            TVs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Computer
+                                                            Accessories</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Desktops</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Tax
+                                                            Software</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">Computer
+                                                            Software</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#!" class="menu-column__link">PC
+                                                            Finder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </li>
             </ul>
         </nav>
+        <div class="navbar-overlay js-toggle-active" data-active-target="navbar">
+        </div>
 
         <div class="top-act">
             <div class="top-act__group">
@@ -36,18 +1008,76 @@
                     <img src="./assets/icons/icon__search.svg" alt="" class="icon top-act__icon">
                 </button>
             </div>
-            <div class="top-act__group">
-                <button class="top-act__btn">
+            <div class="top-act__group d-flex d-md-none">
+                <a href="./favourite.html" class="top-act__btn">
                     <img src="./assets/icons/icon__heart.svg" alt="" class="icon top-act__icon">
                     <span class="top-act__title">03</span>
-                </button>
+                </a>
                 <div class="top-act__separate"></div>
                 <button class="top-act__btn">
                     <img src="./assets/icons/icon__cart.svg" alt="" class="icon top-act__icon">
                     <span class="top-act__title">$65.42</span>
+                    <section class="cart-dropdown">
+                        <div class="cart-dropdown__inner">
+                            <div class="cart-menu">
+                                <div class="cart-menu__heading">
+                                    <p class="cart-menu__title">You have 3 item</p>
+                                    <a href="./checkout.html" class="cart-menu__all">See All</a>
+                                </div>
+                                <ul class="cart-menu__prds row row-cols-3">
+                                    <li>
+                                        <div class="card-04">
+                                            <div class="card-04__img">
+                                                <img src="./assets/images/coffee-img-01.png" alt="">
+                                            </div>
+                                            <p class="card-04__name">Lavazza Coffee Blends </p>
+                                            <p class="card-04__price">$329.00</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-04">
+                                            <div class="card-04__img">
+                                                <img src="./assets/images/coffee-img-01.png" alt="">
+                                            </div>
+                                            <p class="card-04__name">Lavazza Coffee Blends </p>
+                                            <p class="card-04__price">$329.00</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-04">
+                                            <div class="card-04__img">
+                                                <img src="./assets/images/coffee-img-01.png" alt="">
+                                            </div>
+                                            <p class="card-04__name">Lavazza Coffee Blends </p>
+                                            <p class="card-04__price">$329.00</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="cart-menu__prices">
+                                    <div class="cart-menu__price">
+                                        <p>Subtotal</p>
+                                        <p>$415.99</p>
+                                    </div>
+                                    <div class="cart-menu__price">
+                                        <p>Texes</p>
+                                        <p>Free</p>
+                                    </div>
+                                    <div class="cart-menu__price">
+                                        <p>Shipping</p>
+                                        <p>$10.00</p>
+                                    </div>
+                                    <div class="cart-menu__price cart-menu__price--total">
+                                        <p>Total Price</p>
+                                        <p>$425.99</p>
+                                    </div>
+                                </div>
+                                <a href="./checkout.html" class="cart-menu__btn circle-btn">Check Out All</a>
+                            </div>
+                        </div>
+                    </section>
                 </button>
             </div>
-            <button class="top-act__user">
+            <button class="top-act__user" onclick="window.location.href='./profile.html'">
                 <img src="./assets/images/avatar.png" alt="" class="top-act__ava">
             </button>
         </div>

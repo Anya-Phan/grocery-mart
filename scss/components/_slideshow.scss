@@ -1,0 +1,25 @@
+@use "../abs";
+.slideshow {
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include abs.breakpoint(lg) {
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__img-wrapper {
+        position: relative;
+        padding-bottom: 28%;
+        @include abs.breakpoint(lg) {
+            padding-bottom: 35%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            object-fit: cover;
+        }
+    }
+}

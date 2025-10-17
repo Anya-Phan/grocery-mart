@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grocery Mart - Home</title>
+    <title>Sign In</title>
     <link rel="icon" type="image/png" href="./assets/favicons/favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
@@ -13,20 +13,83 @@
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./assets/css/main.css">
     <!-- script.js -->
-    <script src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/script.js"></script>
 </head>
 
 <body>
-    <header id="header" class="header"></header>
-    <script>
-        load("#header", "./template/header.html");
-    </script>
-    <div class="container">
+    <div class="sign-wrapper">
+        <section class="sign-intro">
+            <div class="container">
+                <div class="sign-intro__inner">
+                    <div class="sign-intro__logo d-none d-md-block">
+                        <a href="./" class="logo">
+                            <img src="./assets/icons/logo.svg" alt="" class="logo__img" />
+                            <h1 class="logo__title">grocerymart</h1>
+                        </a>
+                    </div>
+                    <div class="sign-intro__illus">
+                        <img src="./assets/images/illus-signin.png" alt="">
+                        <p class="sign-intro__subtitle"> The best of luxury brand values, high quality products, and
+                            innovative services</p>
+                    </div>
+                    <div class="sign-intro__next d-none d-md-block js-toggle-active" data-active-target="sign-fill">
+                        <img src="./assets/icons/icon__arrow-next.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sign-fill active" id="sign-fill">
+            <div class="container">
+                <div class="sign-fill__inner">
+                    <div class="sign-fill__logo">
+                        <a href="./" class="logo">
+                            <img src="./assets/icons/logo.svg" alt="" class="logo__img" />
+                            <h1 class="logo__title">grocerymart</h1>
+                        </a>
+                    </div>
+                    <form action="./home.html" class="form sign-form">
+                        <h1 class="sign-form__title">Hello Again!</h1>
+                        <p class="sign-form__subtitle"> Welcome back to sign.&nbsp;As a returning customer,&nbsp;you have
+                            access to your previously saved all information.</p>
+                        <div class="sign-form__fields">
+                            <div class="input-field">
+                                <input type="text" name="" placeholder="Email">
+                                <button type="button" class="field-btn">
+                                    <img src="./assets/icons/icon__mess.svg" alt="" class="icon">
+                                </button>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" name="" placeholder="Password" autocomplete="on">
+                                <button type="button" class="field-btn">
+                                    <img src="./assets/icons/icon__lock.svg" alt="" class="icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sign-form__row">
+                            <div class="form__check">
+                                <label>
+                                    <input type="checkbox" name="" class="form__realbox">
+                                    <div class="form__fakebox"></div>
+                                    <p class="form__checklabel">Set as default card</p>
+                                </label>
+                            </div>
+                            <a href="#!" class="sign-form__recovery-pw">Recovery Password</a>
+                        </div>
+                        <div class="sign-form__btns">
+                            <button class="round-btn sign-form__btn">Login</button>
+                            <a href="" class="no-bg-btn sign-form__btn"><img src="./assets/icons/icon__google-line.svg"
+                                    alt=""> Sign in with Gmail</a>
+                        </div>
+                    </form>
+                    <div class="sign-ask">
+                        <p class="sign-ask__text">Don’t have an account yet?</p>
+                        <a href="./sign-up.html" class="sign-ask__link">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <footer id="footer" class="footer"></footer>
-    <script>
-        load("#footer", "./template/footer.html");
-    </script>
+
 </body>
 
 </html>

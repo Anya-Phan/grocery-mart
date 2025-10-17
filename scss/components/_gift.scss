@@ -1,0 +1,28 @@
+@use "../abs";
+.gift {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: var(--card-bg-color-2);
+    border-radius: 20px;
+    &__icon {
+        width: 76px;
+        height: 76px;
+        border-radius: 14px;
+        padding: 10px;
+        background:  #7644e111;
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+        @include abs.breakpoint(lg){
+            font-size: 16px;
+        }
+    }
+    &__subtitle {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}

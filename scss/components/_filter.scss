@@ -1,0 +1,99 @@
+@use "../abs";
+.filter {
+    position: relative;
+    padding-bottom: 20px;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        background-color: var(--card-bg-color-2);
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-weight: 500;
+        img {
+            width: 16px;
+            height: auto;
+            filter: var(--icon-color);
+        }
+    }
+
+    &__wrapper {
+        display: none;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        max-width: calc(100vw - 30px) ;
+
+        background-color: var(--top-act-bg-color);
+        box-shadow: 0px 40px 90px 20px var(--shadow-color);
+        border-radius: 20px;
+        padding: 30px;
+        margin-top: 20px;
+        &::after {
+            content: url("../icons/bridge.svg");
+            filter: var(--dropdown-bridge-color);
+            position: absolute;
+            top: -12px;
+            right: 35px;
+        }
+        @include abs.breakpoint(xl) {
+            padding: 20px;
+        }
+    }
+    &__wrapper.active {
+        display: block;
+    }
+    &__overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background-color: transparent;
+    }
+    &__wrapper.active ~ &__overlay {
+        display: block;
+    }
+
+    &__form {
+        margin-top: 30px;
+        @include abs.breakpoint(xl) {
+            margin-top: 20px;
+        }
+    }
+    &__funcs {
+        display: flex;
+        gap: 30px;
+        @include abs.breakpoint(xl) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    &__func {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 272px;
+        max-width: 100%;
+    }
+    &__seperate {
+        width: 0.8px;
+        background: var(--form-elem-color);
+        @include abs.breakpoint(xl) {
+            width: 100%;
+            height: 1px;
+        }
+    }
+    &__tags {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: end;
+        margin-top: 20px;
+    }
+}

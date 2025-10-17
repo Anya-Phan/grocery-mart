@@ -1,0 +1,52 @@
+@use "../abs";
+.add-card {
+    &__heading {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    &__form {
+        margin-top: 30px;
+        @include abs.breakpoint(lg) {
+            margin-top: 16px;
+        }
+    }
+    .title-03 {
+        margin-bottom: 20px;
+        display: block;
+        @include abs.breakpoint(lg) {
+            margin-bottom: 12px;
+        }
+    }
+    .input-field {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    &__check.form__check {
+        font-weight: 500;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 30px;
+        margin-top: 30px;
+        @include abs.breakpoint(lg) {
+            margin-top: 16px;
+        }
+        .circle-btn {
+            padding: 10px 20px;
+            @include abs.breakpoint(lg) {
+                font-size: 14px;
+            }
+        }
+        .cancel-btn {
+            font-size: 16px;
+            font-weight: 500;
+             @include abs.breakpoint(lg) {
+                font-size: 14px;
+            }
+        }
+    }
+}

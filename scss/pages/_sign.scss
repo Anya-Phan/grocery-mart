@@ -1,0 +1,144 @@
+@use "../abs";
+.sign-wrapper {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    > * {
+        flex: 0 1 50%;
+        @include abs.breakpoint(md) {
+            flex: 0 1 auto;
+        }
+    }
+    .logo {
+        margin-left: auto;
+    }
+}
+.sign-intro {
+    background-color: var(--intro-bg);
+    @include abs.breakpoint(md) {
+        width: 100%;
+    }
+    // .container {
+    //     height: 100%;
+    // }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0;
+        height: 100%;
+    }
+
+    &__illus {
+        width: 100%;
+        max-width: 422px;
+        margin: 200px auto;
+        @include abs.breakpoint(md) {
+            margin: 175px auto;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__subtitle {
+        color: var(--top-menu-text-color);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__next {
+        width: 25px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.sign-fill {
+    background-color: var(--top-act-bg-color);
+    @include abs.breakpoint(md) {
+        position: absolute;
+        inset: 0;
+        translate: 100%;
+
+        &.active {
+            translate: 0;
+        }
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 460px;
+        padding: 50px 0;
+        margin: 0 auto;
+    }
+}
+
+.sign-form {
+    margin-top: 50px;
+    &__title {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 60px;
+        color: #9e9da8;
+        text-align: center;
+    }
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .icon {
+            filter: var(--form-elem-color);
+        }
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__recovery-pw {
+        font-size: 15px;
+        font-weight: 500;
+        color: #0071dc;
+    }
+    &__btns {
+        margin-top: 50px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+.sign-ask {
+    margin-top: 108px;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+
+    &__text {
+        color: #9e9da8;
+    }
+
+    &__link {
+        color: #0071dc;
+        font-weight: 500;
+    }
+}

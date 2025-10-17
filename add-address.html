@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Account</title>
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+    <div class="container">
+        <div class="profile">
+            <div class="profile__inner">
+                <section class="panel d-lg-none">
+                    <div class="panel__wall">
+                        <img src="./assets/images/wall-personal.jpg" alt="" class="panel__bg">
+                        <div class="panel__avatar">
+                            <img src="./assets/images/wall-personal.jpg" alt="">
+                        </div>
+                        <p class="panel__name">Imran Khan</p>
+                        <p class="panel__regis">Registered: 17th May 2022</p>
+                    </div>
+                    <div class="panel__control">
+                        <div class="panel__group">
+                            <p class="panel__title">Manage Account</p>
+                            <ul class="panel__list">
+                                <li>
+                                    <a href="./personal.html" class="panel__row">
+                                        <img src="./assets/icons/icon__personal.svg" alt="" class="icon panel__icon">
+                                        <p class="panel__setting">Personal info</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="panel__row">
+                                        <img src="./assets/icons/icon__location.svg" alt="" class="icon panel__icon">
+                                        <p class="panel__setting">Addresses</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="panel__row">
+                                        <img src="./assets/icons/icon__mess.svg" alt="" class="icon panel__icon">
+                                        <p class="panel__setting">Communications & privacy</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="panel__group">
+                            <p class="panel__title">My items</p>
+                            <ul class="panel__list">
+                                <li>
+                                    <a href="" class="panel__row">
+                                        <img src="./assets/icons/icon__download.svg" alt="" class="icon panel__icon">
+                                        <p class="panel__setting">Reorder</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./favourite.html" class="panel__row">
+                                        <img src="./assets/icons/icon__heart.svg" alt="" class="icon panel__icon">
+                                        <p class="panel__setting">Lists</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="panel__row">
+                                        <img src="./assets/icons/icon__gift.svg" alt="" class="icon panel__icon">
+                                        <p class="panel__setting">Registries</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="panel__group">
+                            <p class="panel__title">Subscriptions & plans</p>
+                            <ul class="panel__list">
+                                <li>
+                                    <a href="" class="panel__row">
+                                        <img src="./assets/icons/icon__protect.svg" alt="" class="icon panel__icon">
+                                        <p class="panel__setting">Protection plans</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="panel__group">
+                            <p class="panel__title">Customer Service</p>
+                            <ul class="panel__list">
+                                <li>
+                                    <a href="" class="panel__row">
+                                        <img src="./assets/icons/icon__help.svg" alt="" class="icon panel__icon">
+                                        <p class="panel__setting">Help</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="panel__row">
+                                        <img src="./assets/icons/icon__term.svg" alt="" class="icon panel__icon">
+                                        <p class="panel__setting">Terms of Use</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="tabs-content">
+                    <div class="tabs-content__group">
+                        <section class="add-card">
+                            <div class="add-card__heading">
+                                <a class="go-back" onclick="history.back()">
+                                    <img src="./assets/icons/arrow__left.svg" alt="">
+                                </a>
+                                <div class="title-05">Add a new address</div>
+
+                            </div>
+                            <form class="form add-card__form">
+                                <div class="add-card__grid row row-cols-2 row-cols-lg-1 g-3 g-lg-2">
+                                    <div class="add-card__form-group">
+                                        <label class="title-03">Recipient Name</label>
+                                        <div class="input-field">
+                                            <input type="text" name="" id="" placeholder="Imran">
+                                        </div>
+                                    </div>
+                                    <div class="add-card__form-group">
+                                        <label class="title-03">Phone Number</label>
+                                        <div class="input-field">
+                                            <input type="text" name="" id="" placeholder="0123456">
+                                        </div>
+                                    </div>
+                                    <div class="add-card__form-group col-12">
+                                        <label class="title-03">Address</label>
+                                        <div class="input-field">
+                                            <input type="text" name="" id="" placeholder="Card Number">
+                                        </div>
+                                    </div>
+                                    <div class="add-card__form-group">
+                                        <div class="form__check add-card__check">
+                                            <label>
+                                                <input type="checkbox" name="" class="form__realbox">
+                                                <div class="form__fakebox"></div>
+                                                <p class="form__checklabel">Set as default address</p>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="add-card__btns">
+                                    <button type="button" class="cancel-btn">Cancel</button>
+                                    <button type="button" class="circle-btn">Save</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer"></footer>
+</body>
+
+</html>

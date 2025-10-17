@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite</title>
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <header id="header" class="header"></header>
+    <div class="container">
+        <section class="breadcrumbs pduct-distance">
+            <div class="breadcrumbs__row">
+                <a href="./home.html" class="breadcrumbs__link">Home</a>
+                <img src="./assets/icons/drop-down.svg" alt="" class="breadcrumbs__next">
+                <a href="" class="breadcrumbs__link breadcrumbs__active ">Favorite</a>
+            </div>
+        </section>
+        <section class="checkout-main">
+            <div class="checkout-left">
+                <div class="favourite">
+                    <h1 class="title-02">Favourite List</h1>
+                    <p class="favourite__subtitle">3 items</p>
+                    <div class="favourite__list">
+                        <label>
+                            <input type="checkbox" name="address" class="form__realbox">
+                            <div class="form__fakebox"></div>
+                        </label>
+                        <label>
+                            <div class="card-05">
+                                <div class="card-05__inner">
+                                    <input type="checkbox" name="address" class="form__realbox">
+                                    <div class="form__fakebox"></div>
+                                    <img src="./assets/images/coffee-img-01.png" alt="" class="card-05__img">
+                                    <div class="card-05__info">
+                                        <p class="title-03">
+                                            Coffee Beans - Espresso Arabica and Robusta Beans
+                                        </p>
+                                        <p class="card-05__unit-price">$47.00 | <span>In Stock</span></p>
+                                        <div class="card-05__edit">
+                                            <div class="form">
+                                                <div class="select-couple">
+                                                    <div class="select-single">
+                                                        <button type="button"
+                                                            class="select-single__btn">LavAzza</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form__number">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2"
+                                                            viewBox="0 0 10 2" fill="none">
+                                                            <path d="M8.66634 0.990386H1.33301" stroke="currentColor"
+                                                                stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" value="1">
+                                                    <button>
+                                                        <svg class="w-[12px] h-[12px] text-gray-800 dark:text-white"
+                                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="1.5"
+                                                                d="M5 12h14m-7 7V5" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p class="card-05__sum">$47.00</p>
+                                            <div class="card-05__acts">
+                                                <button class="card-05__act card-05__heart js-toggle-active"
+                                                    id="heart-01" data-active-target="heart-01">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20"
+                                                        viewBox="0 0 22 20" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M1.87187 9.59832C0.798865 6.24832 2.05287 2.41932 5.56987 1.28632C7.41987 0.689322 9.46187 1.04132 10.9999 2.19832C12.4549 1.07332 14.5719 0.693322 16.4199 1.28632C19.9369 2.41932 21.1989 6.24832 20.1269 9.59832C18.4569 14.9083 10.9999 18.9983 10.9999 18.9983C10.9999 18.9983 3.59787 14.9703 1.87187 9.59832Z"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M15 4.69922C16.07 5.04522 16.826 6.00022 16.917 7.12122"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Save
+                                                </button>
+                                                <button class="card-05__act js-toggle-active"
+                                                    data-active-target="delete-modal">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20"
+                                                        viewBox="0 0 19 20" fill="none">
+                                                        <path
+                                                            d="M16.3248 7.46875C16.3248 7.46875 15.7818 14.2037 15.4668 17.0407C15.3168 18.3957 14.4798 19.1898 13.1088 19.2148C10.4998 19.2618 7.88779 19.2648 5.27979 19.2098C3.96079 19.1828 3.13779 18.3788 2.99079 17.0478C2.67379 14.1858 2.13379 7.46875 2.13379 7.46875"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M17.708 4.24023H0.75" stroke="#9E9DA8"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M14.4406 4.23998C13.6556 4.23998 12.9796 3.68498 12.8256 2.91598L12.5826 1.69998C12.4326 1.13898 11.9246 0.750977 11.3456 0.750977H7.11258C6.53358 0.750977 6.02558 1.13898 5.87558 1.69998L5.63258 2.91598C5.47858 3.68498 4.80258 4.23998 4.01758 4.23998"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Delete
+                                                </button>
+                                            </div>
+                                            <a href="#!" class="circle-btn">Check Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="card-05">
+                                <div class="card-05__inner">
+                                    <input type="checkbox" name="address" class="form__realbox">
+                                    <div class="form__fakebox"></div>
+                                    <img src="./assets/images/coffee-img-01.png" alt="" class="card-05__img">
+                                    <div class="card-05__info">
+                                        <p class="title-03">
+                                            Coffee Beans - Espresso Arabica and Robusta Beans
+                                        </p>
+                                        <p class="card-05__unit-price">$47.00 | <span>In Stock</span></p>
+                                        <div class="card-05__edit">
+                                            <div class="form">
+                                                <div class="select-couple">
+                                                    <div class="select-single">
+                                                        <button type="button"
+                                                            class="select-single__btn">LavAzza</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form__number">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2"
+                                                            viewBox="0 0 10 2" fill="none">
+                                                            <path d="M8.66634 0.990386H1.33301" stroke="currentColor"
+                                                                stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" value="1">
+                                                    <button>
+                                                        <svg class="w-[12px] h-[12px] text-gray-800 dark:text-white"
+                                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="1.5"
+                                                                d="M5 12h14m-7 7V5" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p class="card-05__sum">$47.00</p>
+                                            <div class="card-05__acts">
+                                                <button class="card-05__act card-05__heart js-toggle-active"
+                                                    id="heart-01" data-active-target="heart-01">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20"
+                                                        viewBox="0 0 22 20" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M1.87187 9.59832C0.798865 6.24832 2.05287 2.41932 5.56987 1.28632C7.41987 0.689322 9.46187 1.04132 10.9999 2.19832C12.4549 1.07332 14.5719 0.693322 16.4199 1.28632C19.9369 2.41932 21.1989 6.24832 20.1269 9.59832C18.4569 14.9083 10.9999 18.9983 10.9999 18.9983C10.9999 18.9983 3.59787 14.9703 1.87187 9.59832Z"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M15 4.69922C16.07 5.04522 16.826 6.00022 16.917 7.12122"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Save
+                                                </button>
+                                                <button class="card-05__act js-toggle-active"
+                                                    data-active-target="delete-modal">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20"
+                                                        viewBox="0 0 19 20" fill="none">
+                                                        <path
+                                                            d="M16.3248 7.46875C16.3248 7.46875 15.7818 14.2037 15.4668 17.0407C15.3168 18.3957 14.4798 19.1898 13.1088 19.2148C10.4998 19.2618 7.88779 19.2648 5.27979 19.2098C3.96079 19.1828 3.13779 18.3788 2.99079 17.0478C2.67379 14.1858 2.13379 7.46875 2.13379 7.46875"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M17.708 4.24023H0.75" stroke="#9E9DA8"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M14.4406 4.23998C13.6556 4.23998 12.9796 3.68498 12.8256 2.91598L12.5826 1.69998C12.4326 1.13898 11.9246 0.750977 11.3456 0.750977H7.11258C6.53358 0.750977 6.02558 1.13898 5.87558 1.69998L5.63258 2.91598C5.47858 3.68498 4.80258 4.23998 4.01758 4.23998"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Delete
+                                                </button>
+                                            </div>
+                                            <a href="#!" class="circle-btn">Check Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <div class="card-05">
+                                <div class="card-05__inner">
+                                    <input type="checkbox" name="address" class="form__realbox">
+                                    <div class="form__fakebox"></div>
+                                    <img src="./assets/images/coffee-img-01.png" alt="" class="card-05__img">
+                                    <div class="card-05__info">
+                                        <p class="title-03">
+                                            Coffee Beans - Espresso Arabica and Robusta Beans
+                                        </p>
+                                        <p class="card-05__unit-price">$47.00 | <span>In Stock</span></p>
+                                        <div class="card-05__edit">
+                                            <div class="form">
+                                                <div class="select-couple">
+                                                    <div class="select-single">
+                                                        <button type="button"
+                                                            class="select-single__btn">LavAzza</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form__number">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2"
+                                                            viewBox="0 0 10 2" fill="none">
+                                                            <path d="M8.66634 0.990386H1.33301" stroke="currentColor"
+                                                                stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" value="1">
+                                                    <button>
+                                                        <svg class="w-[12px] h-[12px] text-gray-800 dark:text-white"
+                                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="1.5"
+                                                                d="M5 12h14m-7 7V5" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p class="card-05__sum">$47.00</p>
+                                            <div class="card-05__acts">
+                                                <button class="card-05__act card-05__heart js-toggle-active"
+                                                    id="heart-01" data-active-target="heart-01">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20"
+                                                        viewBox="0 0 22 20" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M1.87187 9.59832C0.798865 6.24832 2.05287 2.41932 5.56987 1.28632C7.41987 0.689322 9.46187 1.04132 10.9999 2.19832C12.4549 1.07332 14.5719 0.693322 16.4199 1.28632C19.9369 2.41932 21.1989 6.24832 20.1269 9.59832C18.4569 14.9083 10.9999 18.9983 10.9999 18.9983C10.9999 18.9983 3.59787 14.9703 1.87187 9.59832Z"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M15 4.69922C16.07 5.04522 16.826 6.00022 16.917 7.12122"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Save
+                                                </button>
+                                                <button class="card-05__act js-toggle-active"
+                                                    data-active-target="delete-modal">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20"
+                                                        viewBox="0 0 19 20" fill="none">
+                                                        <path
+                                                            d="M16.3248 7.46875C16.3248 7.46875 15.7818 14.2037 15.4668 17.0407C15.3168 18.3957 14.4798 19.1898 13.1088 19.2148C10.4998 19.2618 7.88779 19.2648 5.27979 19.2098C3.96079 19.1828 3.13779 18.3788 2.99079 17.0478C2.67379 14.1858 2.13379 7.46875 2.13379 7.46875"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M17.708 4.24023H0.75" stroke="#9E9DA8"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M14.4406 4.23998C13.6556 4.23998 12.9796 3.68498 12.8256 2.91598L12.5826 1.69998C12.4326 1.13898 11.9246 0.750977 11.3456 0.750977H7.11258C6.53358 0.750977 6.02558 1.13898 5.87558 1.69998L5.63258 2.91598C5.47858 3.68498 4.80258 4.23998 4.01758 4.23998"
+                                                            stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Delete
+                                                </button>
+                                            </div>
+                                            <a href="#!" class="circle-btn">Check Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="checkout-left__foot">
+                    <a href="./home.html" class="page-back">
+                        <img src="./assets/icons/icon__dropdown.svg" alt="">
+                        <p>Continue Shopping</p>
+                    </a>
+                    <a href="./checkout.html" class="circle-btn">All Check Out</a>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+    <div id="delete-modal" class="modal">
+        <div class="modal__overlay js-toggle-active" data-active-target="delete-modal">
+        </div>
+        <div class="modal__content">
+            <div class="modal__close js-toggle-active" data-active-target="delete-modal">
+                <img src="./assets/icons/icon__close.svg" alt="">
+            </div>
+            <p class="modal__message">Are you sure you want to delete this product?</p>
+            <div class="modal__btns">
+                <button class="modal__btn red-btn js-toggle-active" data-active-target="delete-modal">Delete</button>
+                <button class="modal__btn no-bg-btn js-toggle-active" data-active-target="delete-modal">No, I'm
+                    not</button>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer"></footer>
+</body>
+
+</html>

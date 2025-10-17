@@ -1,0 +1,35 @@
+@use "../abs";
+.title-01 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    @include abs.breakpoint(lg) {
+        font-size: 18px;
+    }
+}
+
+.title-02 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.title-03 {
+    font-size: 18px;
+    font-weight: 500;
+    @include abs.breakpoint(lg) {
+        font-size: 14px;
+    }
+}
+
+.title-04 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-05 {
+    font-size: 22px;
+    font-weight: 500;
+    @include abs.breakpoint(lg) {
+        font-size: 15px;
+    }
+}

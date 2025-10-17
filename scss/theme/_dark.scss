@@ -3,7 +3,44 @@ html.dark {
     --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
         saturate(0%) hue-rotate(356deg) brightness(103%) contrast(101%);
 
+    //body
+    --bg-color: #292e39;
+
+    //header
     --header-bg-color: #171c28;
     --top-act-bg-color: #292e39;
     --top-act-shadow-color: rgba(0, 0, 0, 0.2);
+
+    // dropdown
+    --dropdown-color: #2b333f;
+    --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
+    --dropdown-bridge-color: brightness(0) saturate(100%) invert(18%) sepia(13%)
+        saturate(875%) hue-rotate(177deg) brightness(97%) contrast(94%);
+    --top-menu-border-color: #171c28;
+    --top-menu-text-color: #b9babe;
+
+    // shadow
+    --shadow-color: rgba(23, 28, 40, 0.4);
+
+    // card img bg
+    --card-bg-color-1: var(--header-bg-color);
+    --card-bg-color-2: #171c28;
+    --img-bg-color-1: var(--bg-color);
+
+    // form element
+    --tag-bg: #171c28;
+
+    // intro
+    --intro-bg: #171c28;
+    --intro-subtitle-color: #b9babe;
+
+    // breadcrumbs
+    --breadcrumb-bg: #171c28;
+
+    //card-odd-and-even
+    --card-odd-bg: rgba(0, 0, 0, 0.05);
+    --card-even-bg: rgba(0, 0, 0, 0.05);
+
+    //title underline
+    --title-undeline: #292e39;
 }

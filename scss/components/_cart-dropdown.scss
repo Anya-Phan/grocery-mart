@@ -1,0 +1,78 @@
+@use "../abs";
+.cart-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    padding-top: 14px;
+    width: min(645px, 100%);
+    display: none;
+    @include abs.breakpoint(xl) {
+    }
+
+    &__inner {
+        position: relative;
+        border-radius: 20px;
+        background: var(--dropdown-color);
+        box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+        padding: 30px;
+        height: auto;
+
+        &::after {
+            content: url("../icons/bridge.svg");
+            filter: var(--dropdown-bridge-color);
+            position: absolute;
+            top: -12px;
+            right: 104px;
+            translate: -50%;
+        }
+        @include abs.breakpoint(xl) {
+            box-shadow: none;
+        }
+    }
+}
+
+.cart-menu {
+    &__heading {
+        display: flex;
+        font-size: 22px;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 500;
+    }
+    &__prds {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__prds li:nth-child(2n) .card-04__img {
+        background-color: var(--card-even-bg);
+    }
+    &__all {
+        color: #0071dc;
+    }
+    &__prices {
+        border-top: 1px solid #d2d1d6;
+        border-bottom: 1px solid #d2d1d6;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-size: 22px;
+
+        &--total{
+            font-weight: 500;
+        }
+    }
+
+    &__btn {
+        margin-top: 30px;
+        display: block;
+        margin-left: auto;
+    }
+}
