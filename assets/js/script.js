@@ -185,6 +185,26 @@ function range() {
 }
 window.addEventListener("template-loaded", range);
 
+function themeToggle() {
+    const button = $(".theme-toggle"),
+        html = $("html");
+    const isDark = localStorage.dark === "true";
+    html.classList.toggle("dark", !isDark);
+    localStorage.setItem("dark", !isDark);
+    button.querySelector("img").src = isDark
+        ? "./assets/icons/dark-theme.svg"
+        : "./assets/icons/light-theme.svg";
+}
+
+const isDark = localStorage.dark === "true";
+$("html").classList.toggle("dark", isDark);
+$(".theme-toggle").querySelector("img").src = isDark
+    ? "./assets/icons/light-theme.svg"
+    : "./assets/icons/dark-theme.svg";
+$(".theme-toggle").onclick = function () {
+    themeToggle();
+};
+
 /* Swiper Product */
 const tabsThumb = new Swiper(".desc__tabs", {
     direction: "horizontal",

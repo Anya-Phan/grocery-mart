@@ -169,9 +169,13 @@
         align-items: center;
         margin-bottom: 20px;
         font-weight: 500;
+        
     }
+    
     &__icon {
         filter: var(--icon-color);
+        width: 20px;
+        height: 20px;
     }
     &__name {
         margin-left: 16px;
